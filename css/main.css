@@ -139,11 +139,15 @@ body > section,
   position: fixed;
   width: 100%;
   z-index: 1100;
+
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
 }
 
 #preloader > img {
   left: 47%;
-  position: absolute;
+  position: relative;
   top: 48%;
 }
 
@@ -738,13 +742,13 @@ label.error {
 	Glitch button code
 ==========================================*/
 
-button {
+.installBtn {
   display: block;
   margin: 20px auto;   
   font-family: 'Ethnocentric', sans-serif;
 }
 
-button,button::after {
+.installBtn,.installBtn::after {
   padding: 15px 70px;
   font-size: 28px;
   border: none;
@@ -755,7 +759,7 @@ button,button::after {
   position: relative;
 }
 
-button::after {
+.installBtn::after {
   --move1: inset(50% 50% 50% 50%);
   --move2: inset(31% 0 40% 0);
   --move3: inset(39% 0 15% 0);
@@ -763,7 +767,7 @@ button::after {
   --move5: inset(45% 0 6% 0);
   --move6: inset(14% 0 61% 0);
   clip-path: var(--move1);
-  content: 'GLITCH';
+  content: 'INSTALL';
   position: absolute;
   top: 0;
   left: 0;
@@ -772,7 +776,7 @@ button::after {
   display: block;
 }
 
-button:hover::after {
+.installBtn:hover::after {
   animation: glitch_4011 1s;
   text-shadow: 10 10px 10px black;
   animation-timing-function: steps(2, end);
@@ -781,11 +785,11 @@ button:hover::after {
   border: 3px solid rgb(0, 235, 2);
 }
 
-button:hover {
+.installBtn:hover {
   text-shadow: -1px -1px 0px #00EB02, 1px 1px 0px #E94BE8;
 }
 
-button:hover {
+.installBtn:hover {
   background-color: transparent;
   border: 1px solid rgb(0, 235, 2);
   box-shadow: 0px 10px 10px -10px rgb(0, 235, 2);
@@ -846,4 +850,113 @@ button:hover {
     clip-path: var(--move1);
     transform: translate(0);
   }
+}
+
+/*=========================================
+  Spinner code
+==========================================*/
+
+.spinner {
+  width: 70.4px;
+  height: 70.4px;
+  --clr: lime;
+  --clr-alpha: transparrent;
+  animation: spinner 1.6s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 3.5px solid var(--clr);
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-35.2px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(35.2px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+/*=========================================
+	AEGIS Hover code
+==========================================*/
+
+/* button styling */
+.aegis-button {
+  display: inline-block;   
+  margin: 0 0 0 5px;  
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Ethnocentric', sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 3px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.6);
+  --border-right: 6px;
+  --animation-color: #37FF8B;
+  --text-stroke-color: rgba(255,255,255,0.6);
+}
+
+/* The hover overlay text */
+.aegis-button .hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* Hover effect */
+.aegis-button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
 }
