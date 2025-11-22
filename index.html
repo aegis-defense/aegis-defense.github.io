@@ -220,17 +220,12 @@
                     <p>Download the zip file below and extract all. Then run aegis.exe to begin experimenting with Aegis. Aegis is currently only compatible with windows operatings systems.</p>
                 </div>
 
-                <button class="installBtn">INSTALL</button>
+                <button id="installBtn" class="installBtn">INSTALL</button>
 
                 <script>
-                document.getElementById('installBtn').addEventListener('click', function() {
-                    const link = document.createElement('a');
-                    link.href = 'Project Files/AEGIS.zip'; // path to your zip
-                    link.download = 'AEGIS.zip';   
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                });
+                    document.getElementById('installBtn').addEventListener('click', function() {
+                        window.location.href = 'https://github.com/aegis-defense/aegis-defense.github.io/releases/latest/download/AEGIS.zip';
+                    });
                 </script>
 
                 <!-- <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
