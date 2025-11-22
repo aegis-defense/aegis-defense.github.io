@@ -21,9 +21,6 @@
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google Font -->
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- CSS
 		================================================== -->
@@ -69,7 +66,7 @@
                 <!-- logo -->
                 <a class="navbar-brand" href="#body">
                     <h1 id="logo">
-                        <img src="img/logo.png" alt="Brandi">
+                        <img src="img/AEGISLogoTop.png" alt="AEGIS">
                     </h1>
                 </a>
                 <!-- /logo -->
@@ -82,7 +79,6 @@
                     <li><a href="#features">Features</a></li>
                     <li><a href="#works">Work</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="http://google.com">Contact</a></li>
                 </ul>
             </nav>
             <!-- /main nav -->
@@ -99,62 +95,22 @@
         Home Slider
         ==================================== -->
 
-    <section id="slider">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <section id="slider" class="static-banner" style="background-image: url('img/banner.jpg');">
+        <div class="carousel-caption">
+            <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">
+                Welcome to<span> AEGIS</span>!
+            </h2>
+            <p data-wow-duration="1000ms" class="wow slideInRight animated">
+                Ballistic Missile Defense
+            </p>
 
-            <!-- Indicators bullet -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            </ol>
-            <!-- End Indicators bullet -->
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-
-                <!-- single slide -->
-                <div class="item active" style="background-image: url(img/banner.jpg);">
-                    <div class="carousel-caption">
-                        <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">
-                            Meet<span> Brandi</span>!</h2>
-                        <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span
-                                class="color">/creative</span> one page template.</h3>
-                        <p data-wow-duration="1000ms" class="wow slideInRight animated">We are a team of professionals
-                        </p>
-
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end single slide -->
-
-                <!-- single slide -->
-                <div class="item" style="background-image: url(img/banner.jpg);">
-                    <div class="carousel-caption">
-                        <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">
-                            Meet<span> Team</span>!</h2>
-                        <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span
-                                class="color">/creative</span> one page template.</h3>
-                        <p data-wow-duration="500ms" class="wow slideInRight animated">We are a team of professionals
-                        </p>
-
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- end single slide -->
-
-            </div>
-            <!-- End Wrapper for slides -->
-
+            <!-- keeping this in case we decide we want some social links added in here-->
+            <!-- <ul class="social-links text-center">
+                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+            </ul> -->
         </div>
     </section>
 
@@ -241,16 +197,19 @@
             <div class="row">
 
                 <div class="sec-title text-center">
-                    <h2>Works</h2>
+                    <h2>Download AEGIS</h2>
                     <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
                 </div>
 
                 <div class="sec-sub-title text-center">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                    <p>Download the zip file below and extract all. Then run aegis.exe to begin experimenting with Aegis.</p>
                 </div>
 
-                <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+                <button>
+                    INSTALL
+                </button>
+
+                <!-- <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
                     <ul class="text-center">
                         <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
                         <li><a href="javascript:;" data-filter=".branding" class="filter">Branding</a></li>
@@ -258,12 +217,13 @@
                         <li><a href="javascript:;" data-filter=".logo-design" class="filter">logo design</a></li>
                         <li><a href="javascript:;" data-filter=".photography" class="filter">photography</a></li>
                     </ul>
-                </div>
+                </div> -->
 
             </div>
         </div>
 
-        <div class="project-wrapper">
+        <!-- keeping this in case someone wants to use it later -->
+        <!-- <div class="project-wrapper">
 
             <figure class="mix work-item branding">
                 <img src="img/works/item-1.jpg" alt="">
@@ -345,7 +305,7 @@
                 </figcaption>
             </figure>
 
-        </div>
+        </div> -->
 
 
     </section>
@@ -387,8 +347,8 @@
                             </ul>
                         </figcaption>
                     </div>
-                    <h4>John Filmr Doe</h4>
-                    <span>Managing Director</span>
+                    <h4>David Nixon</h4>
+                    <span>Physics Engine Designer</span>
                 </figure>
                 <!-- end single member -->
 
@@ -407,8 +367,8 @@
                             </ul>
                         </figcaption>
                     </div>
-                    <h4>Martin Matrone</h4>
-                    <span>Lead Developer</span>
+                    <h4>Spencer Hoth</h4>
+                    <span>Database and AI Lead</span>
                 </figure>
                 <!-- end single member -->
 
@@ -427,8 +387,8 @@
                             </ul>
                         </figcaption>
                     </div>
-                    <h4>Steve Flaulkin</h4>
-                    <span>Sr. UI Designer</span>
+                    <h4>Matthew Duffin</h4>
+                    <span>Full Stack Developer</span>
                 </figure>
                 <!-- end single member -->
 
@@ -447,8 +407,8 @@
                             </ul>
                         </figcaption>
                     </div>
-                    <h4>John Filmr Doe</h4>
-                    <span>Managing Director</span>
+                    <h4>Luis Sanchez</h4>
+                    <span>3D Graphics and Unity Expert</span>
                 </figure>
                 <!-- end single member -->
 
@@ -594,10 +554,6 @@
             </div>
         </div>
 
-        <!-- Google map -->
-        <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
-        <!-- End Google map -->
-
     </section>
 
     <!--
@@ -659,8 +615,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="copyright text-center">
-                        Copyright © 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved.
-                        Designed & developed by <a href="http://themefisher.com/">Themefisher</a>
+                        Copyright © 2025 AEGIS. All rights reserved.
                     </p>
                 </div>
             </div>
@@ -690,8 +645,6 @@
     <!-- Contact form validation -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
-    <!-- Google Map -->
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <!-- jquery easing -->
     <script src="js/jquery.easing.min.js"></script>
     <!-- jquery easing -->
