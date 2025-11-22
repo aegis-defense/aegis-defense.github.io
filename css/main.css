@@ -3,12 +3,19 @@
 /*	Basic Style 
 /* =================================== */
 
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('../fonts/Ethnocentric-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background-color: #fff;
+    background-color: #403d3d;
     font-family: 'Open Sans', sans-serif;
     line-height: 21px;
 	font-size: 13px;
-    color: #6a737b;
+    color: #fff;
 }
 
 ol, ul {
@@ -41,13 +48,18 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-    color: #6CB670;
+    color: #00EB02;
 }
 
 h1, h2, h3,
 h4, h5, h6 {
 	font-weight: normal;
 	margin: 0;
+  color: #00EB02;
+}
+
+h2 {
+    font-family: 'Ethnocentric', sans-serif;
 }
 
 .clear:before,
@@ -61,11 +73,11 @@ h4, h5, h6 {
 }
  
 .clear {
-   *zoom: 1;
+   zoom: 1;
 }
 
 span.color {
-	color: #0feb9e;
+	color: #00EB02;
 }
 
 body > section,
@@ -76,7 +88,7 @@ body > section,
 .sec-title {}
 
 .sec-title h2 {
-  color: #0eb493;
+  color: #00EB02;
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -90,7 +102,7 @@ body > section,
 	font-weight: 600;
 	line-height: 24px;
 	font-size: 18px;
-	color: #5b646e;
+	color: #fff;
 }
 
 .devider {
@@ -98,13 +110,13 @@ body > section,
 }
 
 .devider i {
-  color: #cccccc;
+  color: #252526;
 }
 
 .devider:before,
 .devider:after {
   content: "______________________";
-  color: #e6e8ea;
+  color: #403d3d;
   position: relative;
   bottom: 6px;
 }
@@ -122,7 +134,7 @@ body > section,
 }
 
 #preloader {
-  background-color: #fff;
+  background-color: #403d3d;
   height: 100%;
   position: fixed;
   width: 100%;
@@ -168,8 +180,8 @@ body > section,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
 	background-color: transparent;
-	border-top: 1px solid #32B0EE;
-	color: #fff;
+	border-top: 1px solid #00EB02;
+	color: #00EB02;
 }
 
 
@@ -214,7 +226,7 @@ body > section,
 
 .carousel-caption p:before,
 .carousel-caption p:after {
-color: #0feb9e;
+color: #00EB02;
 content: "___";
 position: relative;
 top: -8px;
@@ -273,7 +285,7 @@ top: -8px;
 ==========================================*/
 
 .features {
-  background-color: #f4f7f9;
+  background-color: #252526;
 }
 
 .owl-controls {
@@ -297,14 +309,14 @@ top: -8px;
 }
 
 .owl-controls .owl-page.active span {
-  background: #062033;
+  background: #00EB02;
   border: 0;
 }
 
 .service-icon {
-  border: 1px solid #0eb493;
+  border: 1px solid #00EB02;
   border-radius: 50%;
-  color: #0eb493;
+  color: #00EB02;
   float: left;
   padding: 10px 13px;
 }
@@ -316,13 +328,11 @@ top: -8px;
 }
 
 .service-desc h3 {
-  color: #062033;
+  color: #00EB02;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 25px;
 }
-
-
 
 
 /*=========================================
@@ -338,7 +348,7 @@ top: -8px;
 }
 
 .work-filter ul li a {
-  color: #062033;
+  color: #00EB02;
   display: block;
   font-size: 14px;
   font-weight: 700;
@@ -349,7 +359,7 @@ top: -8px;
 
 .work-filter ul li a:hover,
 .work-filter ul li a.active {
-  background-color: #0eb493;
+  background-color: #00EB02;
   border-radius: 6px;
   color: #fff;
   padding: 5px 17px;
@@ -372,7 +382,7 @@ top: -8px;
 }
 
 .overlay {
-	background-color: rgba(14,180,147,.9);
+	background-color: #00EB02;
 	text-align: center;
 	position: absolute;
 	left: 0;
@@ -456,7 +466,7 @@ top: -8px;
 }
 
 .team-member h4 {
-  color: #062033;
+  color: #00EB02;
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
@@ -476,7 +486,7 @@ top: -8px;
 }
 
 .team-member:hover h4 {
-  color: #0eb493;
+  color: #00EB02;
 }
 
 .team-member .social-links {
@@ -559,7 +569,7 @@ top: -8px;
 }
 
 .contact-address h3 {
-  color: #062033;
+  color: #00EB02;
   font-size: 22px;
   line-height: 32px;
   margin-bottom: 25px;
@@ -572,7 +582,7 @@ top: -8px;
 .contact-form {}
 
 .contact-form h3 {
-  color: #062033;
+  color: #00EB02;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -646,13 +656,13 @@ label.error {
 
 
 .footer {
-  background-color: #1ea78d;
-  border-top: 5px solid #062033;
+  background-color: #00EB02;
+  border-top: 5px solid #00EB02;
   color: #fff;
 }
 
 .footer a:hover {
-  color: #062033;
+  color: #00EB02;
 }
 
 .footer h6 {
@@ -705,7 +715,7 @@ label.error {
 }
 
 .credit a {
-  color: #062033;
+  color: #00EB02;
 }
 
 .credit a:hover {
@@ -722,4 +732,118 @@ label.error {
   position: fixed;
   right: 25px;
   z-index: 9;
+}
+
+/*=========================================
+	Glitch button code
+==========================================*/
+
+button {
+  display: block;
+  margin: 20px auto;   
+  font-family: 'Ethnocentric', sans-serif;
+}
+
+button,button::after {
+  padding: 15px 70px;
+  font-size: 28px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 235, 2); 
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #00EB02, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(0, 235, 2);
+}
+
+button:hover {
+  text-shadow: -1px -1px 0px #00EB02, 1px 1px 0px #E94BE8;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 235, 2);
+  box-shadow: 0px 10px 10px -10px rgb(0, 235, 2);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
 }
