@@ -11,7 +11,8 @@
 }
 
 body {
-    background-color: #403d3d;
+    /* background-color: #403d3d; */
+    background-color: #252526;
     font-family: 'Open Sans', sans-serif;
     line-height: 21px;
 	font-size: 13px;
@@ -116,7 +117,7 @@ body > section,
 .devider:before,
 .devider:after {
   content: "______________________";
-  color: #403d3d;
+  color: #00EB02;
   position: relative;
   bottom: 6px;
 }
@@ -342,7 +343,9 @@ top: -8px;
 /*=========================================
 	Our Works
 ==========================================*/
-
+#install{
+  background-color: #403d3d;
+}
 .work-filter {
   margin-bottom: 35px;
 }
@@ -567,9 +570,12 @@ top: -8px;
 /*=========================================
 	Contact Us
 ==========================================*/
-
+#tutorial{
+  background-color: #403d3d;
+}
 .contact {
 	padding-bottom: 0;
+  background-color: #252526;
 }
 
 .contact-address h3 {
@@ -959,4 +965,13 @@ label.error {
 .aegis-button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+
+/*=========================================
+	Video Player
+==========================================*/
+.video-player {
+    display: block;
+    margin: 0 auto;
 }
