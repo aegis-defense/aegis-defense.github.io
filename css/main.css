@@ -1,4 +1,3 @@
-
 /* =================================== */
 /*	Basic Style 
 /* =================================== */
@@ -56,7 +55,7 @@ h1, h2, h3,
 h4, h5, h6 {
 	font-weight: normal;
 	margin: 0;
-  color: #00EB02;
+    color: #00EB02;
 }
 
 h2 {
@@ -142,8 +141,8 @@ body > section,
   z-index: 1100;
 
   display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
+  justify-content: center; 
+  align-items: center;    
 }
 
 #preloader > img {
@@ -191,7 +190,6 @@ body > section,
 
 
 
-
 /*=========================================
 	Slider
 ==========================================*/
@@ -200,8 +198,12 @@ body > section,
 	padding: 0;
 }
 
+/* UPDATED BLOCK — NON-REPEATING BANNER */
 #slider .carousel-inner .item {
-  background-size: cover;
+  background-image: url("img/banner.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center center; 
 }
 
 .carousel-caption {
@@ -903,29 +905,18 @@ label.error {
   transform-origin: bottom center;
 }
 
-.spinner div:nth-of-type(6) {
-  transform: translateZ(35.2px);
-}
+.spinner div:nth-of-type(6) { transform: translateZ(35.2px); }
 
 @keyframes spinner {
-  0% {
-    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-  }
-
-  50% {
-    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-  }
-
-  100% {
-    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
-  }
+  0%   { transform: rotate(45deg) rotateX(-25deg) rotateY(25deg); }
+  50%  { transform: rotate(45deg) rotateX(-385deg) rotateY(25deg); }
+  100% { transform: rotate(45deg) rotateX(-385deg) rotateY(385deg); }
 }
 
 /*=========================================
 	AEGIS Hover code
 ==========================================*/
 
-/* button styling */
 .aegis-button {
   display: inline-block;   
   margin: 0 0 0 5px;  
@@ -947,7 +938,6 @@ label.error {
   --text-stroke-color: rgba(255,255,255,0.6);
 }
 
-/* The hover overlay text */
 .aegis-button .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -961,7 +951,6 @@ label.error {
   -webkit-text-stroke: 1px var(--animation-color);
 }
 
-/* Hover effect */
 .aegis-button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
@@ -971,6 +960,7 @@ label.error {
 /*=========================================
 	Video Player
 ==========================================*/
+
 .video-player {
     display: block;
     margin: 0 auto;
