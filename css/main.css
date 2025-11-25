@@ -510,6 +510,24 @@ top: -8px;
   width: 42px;
 }
 
+/* Add spacing and separation between each long bio */
+.bio-item {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+}
+.back-to-tiles {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.back-to-tiles:hover {
+    text-decoration: underline;
+}
+
 
 /*=========================================
 	Some fun facts
@@ -568,7 +586,9 @@ top: -8px;
   text-transform: uppercase;
 }
 
-
+#about{
+  background-color: #403d3d;
+}
 /*=========================================
 	Contact Us
 ==========================================*/
